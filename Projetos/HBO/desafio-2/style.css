@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #000000;
+  color: white;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  font-size: 29px;
+}
+
+.leftNavBar i{
+  padding: 1em 1em;
+}
+
+.rightNavBar a{
+  padding: 0 1em;
+}
+
+.mainWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.topContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 0 0em 0;
+}
+
+.topContent h1 {
+  padding: 0.5em;
+}
+
+label {
+  padding: 0 0 0 1em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 3em 0 0 0;
+  width: 40%;
+}
+
+button, input {
+  border-radius: 25px;
+  box-shadow: none;
+  margin: 0.7em;
+  padding: 0.3em;
+  border: none;
+}
+
+input {
+  background-color: rgba(127, 127, 127, 0.75);
+}
+
+button {
+  background-image: linear-gradient(to right,#A18CD1
+  , #FBC2EB);
+}
+
+.loginBtn {
+  width: 40%;
+  align-self: center;
+  margin: 2em;
+}
+
+.loginBtnP{
+  width: 60%;
+  align-self: center;
+  margin: 2em;
+}
+
+p {
+  align-self: center;
+}
+
+header img{
+  padding-top: 15px;
+  display: block;
+  margin: auto;
+}
+
+@media only screen and (max-width: 700px) {
+  .leftNavBar i{
+      padding: 0em 1em;
+      font-size: 0.4em;
+  }
+
+  .rightNavBar a{
+      padding: 0em 1em;
+      font-size: 0.4em;
+  }
+  
+  header img {
+      max-width: 20%;
+      margin: 8px 0 0 25px;
+  }
+
+  .form {
+      display: flex;
+      flex-direction: column;
+      padding: 3em 0 0 0;
+      width: 60%;
+  }
+}
