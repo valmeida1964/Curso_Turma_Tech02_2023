@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='pt-br'>
+    <head>
+        <title>Attribute Selectors</title>
+<style type='text/css'>
+* {
+    font: 12px sans-serif;
+    padding: 5px;
+    color: royalblue;
+}
+fieldset {
+    border: 3px solid rgb(234, 234, 234);
+    background: rgb(244, 244, 244);
+}
+label {
+    display: block;
+    text-align: right;
+    width: 100px;
+}
+label, legend {
+    background: gold;
+    border: 1px solid rgb(75, 75, 75);
+    color: rgb(75, 75, 75);
+}
+input[type='text'] {
+    background: blue;
+    color: lightblue;
+    border: 3px solid lightblue;
+}
+input[type='text'][name='last_name'] {
+    background: forestgreen;
+    color: yellowgreen;
+    border: 3px solid yellowgreen;
+}
+input[type='password'][name='password'] {
+    background: crimson;
+    color: pink;
+    border: 3px solid pink;
+}
+</style>
+
+
+    </head>
+    <body>
+        <form method='post' action=''>
+            <fieldset>
+                <legend>Feedback Form</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for='first-name'>First Name:</label>
+                            </td>
+                            <td>
+                                <input type='text'
+                                       name='first_name'
+                                       id='first-name'
+                                       value='Richard'
+                                       size='25' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for='last-name'>Last Name:</label>
+                            </td>
+                            <td>
+                                <input type='text'
+                                       name='last_name'
+                                       id='last-name'
+                                       value='York'
+                                       size='25' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for='account-password'>Password:</label>
+                            </td>
+                            <td>
+                                <input type='password'
+                                       name='password'
+                                       id='account-password'
+                                       size='25'
+                                       value='mypass' />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>
